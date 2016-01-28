@@ -35,6 +35,7 @@ public class Title extends AppCompatActivity implements View.OnClickListener {
                 startActivity(new Intent(this, Login.class));
                 break;
             case R.id.bTitleRegister:
+                startActivity(new Intent(this, Register.class));
                 break;
         }
     }
