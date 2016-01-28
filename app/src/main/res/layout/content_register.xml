@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nl.develpr.Register"
+    tools:showIn="@layout/activity_register"
+    android:background="@drawable/bg_grad">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ibRegisterBack"
+            android:background="@android:drawable/ic_menu_close_clear_cancel" />
+
+        <EditText
+            android:id="@+id/etRegisterFirstName"
+            android:hint="First Name"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/etRegisterLastName"
+            android:hint="Last Name"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/etRegisterEmail"
+            android:hint="Email Address"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/etRegisterUser"
+            android:hint="Username"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+
+        <EditText
+            android:id="@+id/etRegisterPass"
+            android:hint="Password"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/etRegisterConfirm"
+            android:hint="Confirm Password"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/bRegisterRegister"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_whiteborder"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

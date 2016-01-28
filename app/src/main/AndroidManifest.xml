@@ -33,6 +33,10 @@
         <activity
             android:name=".ForgotPass"
             android:label="@string/title_activity_forgot_pass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
