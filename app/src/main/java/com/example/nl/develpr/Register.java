@@ -58,10 +58,17 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                 startActivity(new Intent(this, Title.class));
                 break;
             case R.id.bRegisterRegister:
-                String userTxt = etRegisterEmail.getText().toString();
+                String userTxt = etRegisterUser.getText().toString();
                 String passwordTxt = etRegisterPass.getText().toString();
+                String firstNameTxt = etRegisterFirstName.getText().toString();
+                String lastNameTxt = etRegisterLastName.getText().toString();
+                String emailTxt = etRegisterEmail.getText().toString();
+                String confirmTxt = etRegisterConfirm.getText().toString();
                 params = new ArrayList<NameValuePair>();
-                params.add(new BasicNameValuePair("email", userTxt));
+                params.add(new BasicNameValuePair("firstName", firstNameTxt));
+                params.add(new BasicNameValuePair("lastName", lastNameTxt));
+                params.add(new BasicNameValuePair("email", emailTxt));
+                params.add(new BasicNameValuePair("username", userTxt));
                 params.add(new BasicNameValuePair("password", passwordTxt));
                 sr = new ServerRequest();
                 JSONObject json = sr.getJSON("http://160.39.139.155:8080/register", params);
