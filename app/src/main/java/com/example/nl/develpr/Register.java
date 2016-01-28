@@ -64,7 +64,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                 params.add(new BasicNameValuePair("email", userTxt));
                 params.add(new BasicNameValuePair("password", passwordTxt));
                 sr = new ServerRequest();
-                JSONObject json = sr.getJSON("http://10.0.2.2:8080/register", params);
+                JSONObject json = sr.getJSON("http://160.39.139.155:8080/register", params);
 
                 if (json != null) {
                     try {

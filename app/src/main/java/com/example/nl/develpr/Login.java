@@ -71,7 +71,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 params.add(new BasicNameValuePair("email", userTxt));
                 params.add(new BasicNameValuePair("password", passTxt));
                 sr = new ServerRequest();
-                JSONObject json = sr.getJSON("http://10.0.2.2:8080/login", params); //160.39.139.155
+                JSONObject json = sr.getJSON("http://160.39.139.155:8080/login", params); //160.39.139.155, 10.0.2.2
                 if (json != null) {
                     try {
                         String jsonStr = json.getString("response");
